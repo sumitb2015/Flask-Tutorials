@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Integrate HTML with Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'css/styles.css') }}">
+</head>
+<body>
+    <h1> Welcome to the world of Flask - Web Framework for python </h1>
+    <form action="/submit" method="POST">
+      <label for="Science">Science:</label><br />
+      <input type="text" id="science" name="science"><br /><br />
+
+      <label for="Maths">Maths:</label><br />
+      <input type="text" id="maths" name="maths"><br /><br />
+
+      <label for="History">History:</label><br />
+      <textarea id="text" name="history"></textarea><br /><br />
+
+      <input type="submit" value="Submit"><br />
+    </form>
+<p>Please fill the form and get your test result</p>
+</body>
+</html>
